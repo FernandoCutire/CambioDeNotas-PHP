@@ -1,5 +1,8 @@
 # CambioDeNotas
 
+<img src="https://user-images.githubusercontent.com/50190625/87825181-40dc6500-c83c-11ea-9642-977d6221c43b.png" width="550" height="350">
+
+
 CambioDeNotas es un programa de PHP que te ayuda a cambiar las notas de tus estudiantes
 
 ## Instalación
