@@ -4,7 +4,7 @@ CambioDeNotas es un programa de PHP que te ayuda a cambiar las notas de tus estu
 
 ## Instalación
 
-Utiliza XAMPP o MAMP en tu ordenador para instalarlo
+Instala XAMPP o MAMP en tu ordenador para correr el programa
 
 
 ## Uso
