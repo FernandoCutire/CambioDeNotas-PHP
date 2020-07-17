@@ -9,12 +9,16 @@ Utiliza XAMPP o MAMP en tu ordenador para instalarlo
 
 ## Uso
 
-```python
-import foobar
+```php
+    $obj = new Notas();
+    //MODIFICAR NOTA
+    //modificar();
+    //MODIFICA NOTAS   
+    $hacercamb = $_REQUEST["m"];
+    $estcam = $_REQUEST["1"];
+    $asigcam = $_REQUEST["hm"];
+    $notcam = $_REQUEST["3"];
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
 ```
 
 ## Contribuir
