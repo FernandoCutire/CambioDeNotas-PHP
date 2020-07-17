@@ -246,6 +246,11 @@ li  {
   width: 100%;
 }
 
+.footer {
+  color: #fff;
+  text-decoration: none;
+}
+
 footer {
   padding-top: 5rem;
 }
