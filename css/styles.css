@@ -1,0 +1,312 @@
+/*
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+}
+
+/*     font-family: 'Open Sans', sans-serif; */
+/* 1rem =  10px; si quieres 20px, solo pones 2rem */
+
+.page__container {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5rem;
+  text-align: center;
+  position: relative;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-right: 15%;
+  margin-top: 2.5%;
+}
+
+#header__img {
+  float: left;
+  width: 10%;
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  margin: 1rem;
+}
+
+/* NAV ¨*/
+.navigation__nav {
+  text-align: center;
+  height: 25%;
+  width: 100%;
+  left: 1px;
+  bottom: 1.8rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 5rem;
+  margin-left: 20%;
+}
+
+.navigation__nav,
+li  {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+  
+}
+
+.navigation__nav ul a {
+ 
+  margin: 4rem;
+  padding: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eb2f64
+}
+
+.navigation__nav ul li > * {
+  margin: 2rem;
+}
+
+.navigation__nav ul  a:hover {
+  text-decoration: none;
+  background-color: #eb2f64;
+  color: #faf9f9;
+}
+
+
+/* FORMULARIOS */
+.form {
+  margin: 10rem 0rem;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #faf9f9;
+  padding: 3rem;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+  clear: both;
+}
+
+.form__nota--formulario {
+  margin: 4% 0;
+}
+
+.form__valores--formulario {
+  margin-top: 2rem;
+}
+
+.form__nota--formulario-group {
+  display: inline-block;
+  width: 25%;
+}
+
+.form__valores--formulario-group {
+  display: inline-block;
+  width: 40%;
+  margin: 5rem;
+}
+
+
+.form__nota--formulario label{
+  margin: 2%;
+  background-color: #FF3366;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  color: #faf9f9;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.form__valores--formulario label {
+  background-color: #FF3366;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 4rem 6rem;
+  box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.3);
+}
+
+.form__valores--persona {
+  margin-top: 3%;
+}
+
+.form__valores--persona input{
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  padding: 1rem 5rem;
+}
+
+
+.form__ingresar-nota {
+  margin-top: 5%;
+}
+
+.form__ingresar-nota input{
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+}
+
+.form__nota--formulario label:hover{
+  background-color: #ccc;
+}
+
+.form__boton {
+  margin-top: 2%;
+  border: 0;
+  padding: 3rem 5rem;
+  border-radius: 2.5rem;
+  background-color: #eb2f64;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.02);
+}
+
+.form__boton:hover {
+  background-color: #BA265D;
+  box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.3);
+}
+
+
+.form__boton:active {
+  background-color: #BA265D;
+  box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.2);
+}
+
+
+/* Cuando esté seleccionado, agrega un color más oscuro */
+.form__nota--formulario input:checked , .form__nota--formulario label:focus{
+  background-color: #BA265D;
+}
+
+/* Arreglo de Respuesta */
+
+.respuestas__sin-media {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+.respuestas__sin-media input {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.respuestas__media {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.respuestas__media input {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+
+/*  FOOTER */
+.footer {
+  clear: both;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  background-color: #eb2f64;
+  width: 100%;
+}
+
+footer {
+  padding-top: 5rem;
+}
+
+.footer svg {
+  position: relative;
+  z-index: 40;
+}
+
+
+/* CSS ANIMATIONS */
+
+
+/* HEADINGS and TEXT */
+
+.heading__primary {
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__heading {
+  font-size: 8rem;
+}
+
+.heading__secondary {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.parrafos {
+  font-size: 1.8rem;
+  margin: 0 4rem;
+}
+
+/* UTILIDADES */
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.margin-top-small {
+  margin-top: 2rem;
+}
+
+.margin-top-medium {
+  margin-top: 6rem;
+}
+
+.nota-margen {
+  margin-top: 2rem;
+  color: #777;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
