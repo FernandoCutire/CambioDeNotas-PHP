@@ -45,10 +45,9 @@ $arreglo = array (
     array ("id"=>"33","taller1"=>70, "taller2"=>100,"taller3"=>100,"parcial1"=>100,"parcial2"=>100,"semestral"=>67,"media"=>-1),
     array ("id"=>"34","taller1"=>70, "taller2"=>100,"taller3"=>100,"parcial1"=>100,"parcial2"=>100,"semestral"=>100,"media"=>-1)
   );
+
+  
     $obj = new Notas();
-    //MODIFICAR NOTA
-    //modificar();
-    //MODIFICA NOTAS   
     $hacercamb = $_REQUEST["m"];
     $estcam = $_REQUEST["1"];
     $asigcam = $_REQUEST["hm"];
