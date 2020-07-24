@@ -23,7 +23,7 @@ function ingrese()
             <div class="form__valores">
                 <div class="form__valores--persona">
                     <h2 class="heading__secondary">Escriba el ID de la persona</h2>
-                    <input placeholder="Ingrese ID" type="text" name="1" value="" required><br></>
+                    <input placeholder="Ingrese ID" type="number" name="1" min="1" max="34" value="" required><br></>
                 </div>
                 <h2 class="heading__secondary">Seleccione la actividad</h2>
                 <div class="form__valores--formulario">
@@ -54,7 +54,7 @@ function ingrese()
                 </div>
                 </div>
                 <div class="form__ingresar-nota">
-                    <h2 class="heading__secondary">Ingrese la nueva nota: <input placeholder="Ejemplo 96" required type="number" name="3" value=""> </h2>
+                    <h2 class="heading__secondary">Ingrese la nueva nota: <input placeholder="Ejemplo 96"  max="100" required type="number" name="3" value=""> </h2>
                 </div>
                 <button class="form__boton" name="cambio" type="submit" text="Envíar">
                 Enviar
