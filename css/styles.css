@@ -15,18 +15,6 @@
 
 */
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 1300px) {
-  .form__nota--formulario label  {
-    padding: 2rem;
-    font-size: 2rem;
-  }
-
-
-
-}
-
-
 *
 *::after,
 *::before{
