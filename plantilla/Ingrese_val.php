@@ -13,7 +13,7 @@ function ingrese()
                         <label for="si">Sí, cambiaré una</label>
                         <input type="radio" id="si" value="1" name="m" checked autofocus>
                     </div>
-                    <div class="form__nota--formulario-group">
+                    <div class="form__nota--formulario-group opcion__no">
                         <label for="no">No, no cambiaré</label>
                         <input type="radio" id="no" value="2" name="m">
                     </div>

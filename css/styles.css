@@ -14,7 +14,22 @@
   --line: 1px solid var(--color-grey-light-2);
 
 */
-* {
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px) {
+  .form__nota--formulario label  {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+
+
+}
+
+
+*
+*::after,
+*::before{
   margin: 0;
   padding: 0;
 }
@@ -26,6 +41,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 10px;
+
 }
 
 /*     font-family: 'Open Sans', sans-serif; */
@@ -74,32 +90,43 @@ body {
 }
 
 .navigation__nav,
-li  {
+li {
   list-style: none;
   text-decoration: none;
   display: inline;
-  
 }
 
 .navigation__nav ul a {
- 
   margin: 4rem;
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: #eb2f64
+  color: #eb2f64;
 }
 
 .navigation__nav ul li > * {
   margin: 2rem;
 }
 
-.navigation__nav ul  a:hover {
+.navigation__nav ul a:hover {
   text-decoration: none;
   background-color: #eb2f64;
   color: #faf9f9;
 }
 
+/* IMAGES */
+
+.medium-image {
+  width: 40%;
+}
+
+.big-image {
+  width: 70%;
+}
+
+.small-image {
+  width: 20%;
+}
 
 /* FORMULARIOS */
 .form {
@@ -131,21 +158,26 @@ li  {
   margin: 5rem;
 }
 
+.opcion__no label {
+  background-color: blueviolet;
+}
 
-.form__nota--formulario label{
+.form__nota--formulario label {
   margin: 2%;
-  background-color: #FF3366;
+  background-color: #ff3366;
   border-radius: 2rem;
   cursor: pointer;
-  padding: 4rem;
+  padding: 2rem 2rem;
   margin-bottom: 4rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #faf9f9;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 }
 
+
+
 .form__valores--formulario label {
-  background-color: #FF3366;
+  background-color: #ff3366;
   cursor: pointer;
   color: #fff;
   border-radius: 2rem;
@@ -157,24 +189,23 @@ li  {
   margin-top: 3%;
 }
 
-.form__valores--persona input{
+.form__valores--persona input {
   margin: 2rem 0;
   font-size: 1.8rem;
   padding: 1rem 5rem;
 }
 
-
 .form__ingresar-nota {
   margin-top: 5%;
 }
 
-.form__ingresar-nota input{
+.form__ingresar-nota input {
   margin: 2rem 0;
   font-size: 1.8rem;
   padding: 1rem 2rem;
 }
 
-.form__nota--formulario label:hover{
+.form__nota--formulario label:hover {
   background-color: #ccc;
 }
 
@@ -191,20 +222,19 @@ li  {
 }
 
 .form__boton:hover {
-  background-color: #BA265D;
+  background-color: #ba265d;
   box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.3);
 }
 
-
 .form__boton:active {
-  background-color: #BA265D;
+  background-color: #ba265d;
   box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.2);
 }
 
-
 /* Cuando esté seleccionado, agrega un color más oscuro */
-.form__nota--formulario input:checked , .form__nota--formulario label:focus{
-  background-color: #BA265D;
+.form__nota--formulario input:checked,
+.form__nota--formulario label:focus {
+  background-color: #ba265d;
 }
 
 /* Arreglo de Respuesta */
@@ -213,7 +243,6 @@ li  {
   text-align: center;
   font-size: 1.4rem;
 }
-
 
 .respuestas__sin-media input {
   margin-bottom: 1.5rem;
@@ -232,8 +261,6 @@ li  {
   font-size: 1.4rem;
 }
 
-
-
 /*  FOOTER */
 .footer {
   clear: both;
@@ -246,9 +273,11 @@ li  {
   width: 100%;
 }
 
-.footer {
+.footer a {
   color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 footer {
@@ -260,9 +289,7 @@ footer {
   z-index: 40;
 }
 
-
 /* CSS ANIMATIONS */
-
 
 /* HEADINGS and TEXT */
 
@@ -283,8 +310,11 @@ footer {
 }
 
 .parrafos {
-  font-size: 1.8rem;
-  margin: 0 4rem;
+  font-size: 2rem;
+  margin: 0 30rem;
+  text-align: justify;
+  line-height: 4rem;
+  animation: moveInRight 2s ease-out;
 }
 
 /* UTILIDADES */
@@ -314,4 +344,3 @@ footer {
   font-size: 2rem;
   font-weight: 400;
 }
-
